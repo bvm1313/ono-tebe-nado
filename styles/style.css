@@ -7,7 +7,6 @@ body{
   max-width: 1100px;
   width: 100%;
   margin: auto;
-  font-family: Raleway, sans-serif;
 }
 
 /*-----------HEADER----------*/
@@ -17,9 +16,9 @@ body{
   height: 100%;
   max-width: 1052px;
   width: 100%;
+  margin: 92px 24px 96px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  margin: 92px 24px 96px;
   font-size: 18px;
 }
 
@@ -30,8 +29,6 @@ body{
 }
 
 .header__links-list {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: row;
   list-style: circle;  
@@ -53,10 +50,6 @@ body{
   text-decoration: none;
 }
 
-.header__link {
-  color:black;
-}
-
 .header__logo-image {
   width: 148px;
   height: 105px;  
@@ -71,8 +64,6 @@ body{
   }
 
 .address ul {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -87,7 +78,7 @@ body{
 
 .cover {
   position: relative;
-  padding: 165px 50px 40px;
+  padding: 165px 50px 50px;
   background-image: url(/images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -107,7 +98,6 @@ body{
 
 .cover__title {
   position: relative;
-  margin: 0;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -140,7 +130,7 @@ body{
 
 .cover__description{
   position: relative;
-  padding-top: 125px;
+  padding-top: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,7 +245,6 @@ body{
   display: block;
   padding: 0 0 0 40px;
   font-size: 20px;
-  color:black;
   line-height: 24px;
 }
 
@@ -295,8 +284,6 @@ body{
 }
 
 .about__title {
-  margin: 0;
-  padding: 0;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
@@ -306,8 +293,6 @@ body{
 }
 
 .about__text-first {
-  margin: 0;
-  padding: 0;
   grid-area: first;
   font-size: 20px;
   font-weight: 400;
@@ -316,7 +301,6 @@ body{
 }
 
 .about__text-second {
-  margin: 0;
   padding-top: 14px;
   grid-area: second;
   font-size: 20px;
@@ -351,22 +335,11 @@ body{
   text-align: center;
 }
 
-.footer__menu-list {
-  margin: 0;
-  padding: 0;
-}
-
 .footer__menu-list-item {
   list-style: none;
 }
 
-.footer__menu-link {
-  color:black;
-}
-
 .footer__social-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 48px;
 }
