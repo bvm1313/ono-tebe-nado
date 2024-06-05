@@ -1,10 +1,10 @@
 .header {
-  height: 100%;
-  max-width: 1052px;
-  width: 100%;
-  margin: 92px 24px 92px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
+  width: 100%;
+  max-width: 1052px;
+  height: 100%;
+  margin: 92px 24px 92px;
   font-size: 18px;
 }
 
@@ -16,9 +16,9 @@
 
 .header__links-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
+  gap: 32px;
   list-style: circle;  
-  gap: 32px;  
 }
 
 .header__links-list-item {
@@ -47,11 +47,11 @@
 
 .address {
   display: flex;
-  justify-content: center;
   flex-flow: column wrap;
+  justify-content: center;
   max-width: 240px;
-  font-style: normal;
   font-size: 18px;
+  font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.01em;
 }
@@ -72,19 +72,19 @@
   position: relative;
   z-index: 1;
   padding: 165px 50px 50px;
+  color: rgb(255 255 255 / 1);
+  text-transform: uppercase;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-transform: uppercase;
-  color: rgb(255 255 255 / 1);
 }
 
 .overlay {
   position: absolute;
-  z-index: -1;
   top: 0;
-  left: 0; 
+  left: 0;
+  z-index: -1; 
   width: 100%;
   height: 100%;
   background: rgb(0 0 0 / .6);
@@ -102,15 +102,15 @@
 }
 
 .aligned-text_center {
-  margin-top: 20px; 
+  margin-top: 20px;
+  line-height: 100px; 
   text-align: center;
-  line-height: 100px;
 }
 
 .aligned-text_right {
   margin-top: 20px;
-  text-align: right;
   line-height: 100px;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -122,33 +122,33 @@
 }
 
 .cover__description {
-  padding-top: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   row-gap: 20px;
+  padding-top: 135px;
 }
 
 .cover__description-text {
   margin-left: 28px;
-  font-size: 22px;
   font-weight: 400;
+  font-size: 22px;
   line-height: 25.83px;
   text-align: left;
   word-spacing: 0.84em;
 }
 
 .bet-button {
-  padding: 12px 32px;
   border: 1px solid rgb(255 255 255 / 1);
+  padding: 12px 32px;
+  color: rgb(255 255 255 / 1);
   font-family: 'Raleway',  Arial, sans-serif;
-  font-size: 22px;
   font-weight: 500;
+  font-size: 22px;
   line-height: 25.83px;
   text-align: center;
   text-transform: inherit;
   background-color: transparent;
-  color: rgb(255 255 255 / 1);
 }
 
 .lots {
@@ -157,18 +157,18 @@
 
 .lots__heading {
   margin: 0 0 0 40px;
+  font-weight: 700;
   font-size: 40px;
-  line-height: 46.96px;
-  font-weight: 700; 
+  line-height: 46.96px; 
   text-align: left;
   text-transform: uppercase;
 }
 
 .lots__card-list {
-  margin: 27px 0 30px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  margin: 27px 0 30px 0;
   list-style: none;
 }
 
@@ -179,20 +179,20 @@
 }
 
 .card-link {
-  height: 100%;
   display: block;
-  text-decoration: none;
+  height: 100%;
   color: rgb(255 255 255 / 1);
+  text-decoration: none;
 }
 
 .card {
   position: relative;
-  margin: 0;
-  padding: 51px 40px 48px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  padding: 51px 40px 48px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,20 +202,20 @@
   z-index: 1;
   margin: 0;
   padding: 0;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26.4px;
-  text-transform: uppercase;
-  text-decoration: underline;
   color: rgb(255 255 255 / 1);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .card__text {
   z-index: 1;
   margin: 0;
   padding: 0;
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -243,26 +243,26 @@
 }
 
 .about {
-  margin: 0;
-  padding: 181px 24px 0;
   display: grid;
-  grid-template-columns: 334px 1fr;
-  gap: 7px 25px;
+  grid-template-columns: 335px 1fr;
   grid-template-areas: 
   "logo title"
   ". text";
+  gap: 8px 24px;
+  margin: 0;
+  padding: 180px 23px 0;
 }
 
 .about__logo {
-  margin: auto;
+  display: flex;
+  grid-area: logo;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
+  margin: auto;
   border-radius: 50%;
   background-color: rgb(0 0 0 / 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: logo;
 }
 
 .about__logo-image {
@@ -272,23 +272,23 @@
 
 .about__title {
   grid-area: title;
-  margin: 101px 0 90px 0;
-  text-transform: uppercase;
-  font-size: 40px;
+  margin-top: 102px;
   font-weight: 700;
+  font-size: 40px;
   line-height: 46.96px;
+  text-transform: uppercase;
 }
 
 .about__text {
-  grid-area: text;
   display: flex;
   flex-direction: column;
+  grid-area: text;
   gap: 24px;
 }
 
 .about__text-letter {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
 }
@@ -298,16 +298,16 @@
 }
 
 .footer {
-  padding: 180px 50px 88px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: 180px 50px 88px;
 }
 
 .footer__menu {
   display: flex;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 21.13px;
   text-align: center;
 }
