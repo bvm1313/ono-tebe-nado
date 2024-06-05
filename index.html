@@ -13,14 +13,14 @@
    <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item header__link_active header__links-list-item_no-bullit">
-            <a>главная</a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0">посмотреть лоты</a>
+            <a class="header__link" href="#0">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0">об аукционе</a>
+            <a class="header__link" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -29,16 +29,16 @@
           src="./images/logo-black.svg"
           alt="в прямоугольнике надпись оно тебе надо">
       </a>
-      <address class="address">
+      <address class="address header__address">
         <ul>
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__address" href="tel:+99995555555">+9 999 555 5555</a><br>
+          <li class="address__item">
+            <a href="tel:+99995555555">+9 999 555 5555</a>
           </li>
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+          <li class="address__item">
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="header__links-list-item_no-bullit">
-            наб. Принсенграхт 263- 265, Амстердам
+          <li class="address__item">
+            <p class="address__letter-spacing-reduce">наб. Принсенграхт 263- 265, Амстердам</p>
           </li>
         </ul>
       </address>
@@ -49,7 +49,7 @@
         </div>
         <h1 class="cover__title">
           <span class="aligned-text">о<span class="letter-spacing-extended">н</span>о</span>
-          <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">б</span>e</span>
+          <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">бe</span></span>
           <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
@@ -109,34 +109,36 @@
       </section>
       <section class="about">
         <div class="about__logo">
-            <img class="about__logo-image"
-              src="./images/logo-white.svg"
-              alt="на черном фоне в прямоугольнике надпись оно тебе надо">
+          <img class="about__logo-image"
+            src="./images/logo-white.svg"
+            alt="на черном фоне в прямоугольнике надпись оно тебе надо">
         </div>
         <h2 class="about__title">Об аукционе</h2>
-        <p class="about__text-first">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-        <p class="about__text-second">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то <span class="about__span_oni">они</span> казались просто неудачными. Но, несмотря
+        <div class="about__text">
+          <p class="about__text-letter">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="about__text-letter">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то <span class="about__text-letter-extended">они</span> казались просто неудачными. Но, несмотря
           на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <address class="address">
         <ul>
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__address" href="tel:+99995555555">+9 999 555 5555</a><br>
+          <li class="address__item">
+            <a href="tel:+99995555555">+9 999 555 5555</a>
           </li>
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+          <li class="address__item">
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="header__links-list-item_no-bullit">
-            наб. Принсенграхт 263- 265, Амстердам
+          <li class="address__item">
+            <p class="address__letter-spacing-reduce">наб. Принсенграхт 263- 265, Амстердам</p>
           </li>
         </ul>
       </address> 
       <nav class="footer__menu">
         <ul>
-          <li class="footer__menu-list-item footer__menu-link_active">
-            <a>главная</a>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link_active">главная</a>
           </li>
           <li class="footer__menu-list-item">
             <a href="#0">посмотреть лоты</a>
