@@ -133,7 +133,7 @@
   margin-left: 28px;
   font-weight: 400;
   font-size: 22px;
-  line-height: 25.83px;
+  line-height: 28px;
   text-align: left;
   word-spacing: 0.84em;
 }
@@ -187,6 +187,7 @@
 
 .card {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
